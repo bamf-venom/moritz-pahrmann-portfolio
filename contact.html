@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Moritz Pahrmann VFX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "V_GdklqrG-dfyXQ3M",
+            });
+        })();
+    </script>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html">MBP</a>
+            </div>
+            <div class="nav-links">
+                <a href="about.html">About me</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="data-protection.html">data protection</a>
+                <a href="legal-info.html">Legal info</a>
+            </div>
+            <div class="nav-social">
+                <a href="#" class="social-icon">📷</a>
+                <a href="#" class="social-icon">📧</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Content -->
+    <main class="contact-main">
+        <section class="contact-hero">
+            <div class="contact-container">
+                <h1 class="page-title">Contact</h1>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Get in Contact with Moritz Pahrmann</h2>
+                        <p class="contact-subtitle">Please write in English or german</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <strong>Email:</strong> moritzpahrmann6@gmail.com
+                            </div>
+                            <div class="contact-item">
+                                <strong>Telefon:</strong> (49) 152 6984
+                            </div>
+                        </div>
+                        
+                        <div class="email-info">
+                            <h3>📧 Direct Email Feature</h3>
+                            <p>The contact form below will send your message directly to my email address. You'll receive a confirmation once sent.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-section">
+                        <!-- Success/Error Message Area -->
+                        <div id="messageArea"></div>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vorname">Vorname *</label>
+                                    <input type="text" id="vorname" name="vorname" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nachname">Nachname *</label>
+                                    <input type="text" id="nachname" name="nachname" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-Mail-Adresse *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="betreff">Betreff</label>
+                                <input type="text" id="betreff" name="betreff" placeholder="Subject of your message">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nachricht">Nachricht/Unterzeigen *</label>
+                                <textarea id="nachricht" name="nachricht" rows="6" required placeholder="Your message here..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn" id="submitBtn">
+                                <span id="btnText">Send</span>
+                                <span id="btnSpinner" style="display: none;">📧 Sending...</span>
+                            </button>
+                        </form>
+                        
+                        <div class="email-instructions">
+                            <h4>📋 Setup Instructions for Email:</h4>
+                            <p><strong>To enable direct email sending:</strong></p>
+                            <ol>
+                                <li>Go to <a href="https://www.emailjs.com" target="_blank" style="color: #4ade80;">EmailJS.com</a> and create a free account</li>
+                                <li>Set up an email service (Gmail recommended)</li>
+                                <li>Create an email template</li>
+                                <li>Replace the EmailJS keys in the script below</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2035 Moritz Pahrmann VFX</p>
+        <div class="footer-links">
+            <a href="data-protection.html">Datenschutz</a>
+            <a href="legal-info.html">Legal Info</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <script>
+        // EmailJS Configuration - REAL CREDENTIALS
+        const EMAILJS_CONFIG = {
+            SERVICE_ID: 'service_604p3x6',      // Your EmailJS service ID
+            TEMPLATE_ID: 'template_o3ugp57',    // Your EmailJS template ID  
+            PUBLIC_KEY: 'V_GdklqrG-dfyXQ3M'    // Your EmailJS public key
+        };
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            const btnSpinner = document.getElementById('btnSpinner');
+            const messageArea = document.getElementById('messageArea');
+            
+            // Get form data and map to your EmailJS template variables
+            const formData = new FormData(this);
+            const templateParams = {
+                name: `${formData.get('vorname')} ${formData.get('nachname')}`,  // {{name}}
+                message: formData.get('nachricht'),                              // {{message}}
+                time: new Date().toLocaleString('de-DE'),                       // {{time}}
+                subjekt: formData.get('betreff') || 'Contact from Portfolio',   // {{subjekt}}
+                from_email: formData.get('email'),                              // Sender's email
+                to_email: 'moritzpahrmann6@gmail.com'                          // Your email
+            };
+            
+            // Basic validation
+            if (!formData.get('vorname') || !formData.get('nachname') || !formData.get('email') || !formData.get('nachricht')) {
+                showMessage('Bitte füllen Sie alle Pflichtfelder (*) aus.', 'error');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(formData.get('email'))) {
+                showMessage('Bitte geben Sie eine gültige E-Mail-Adresse ein.', 'error');
+                return;
+            }
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            btnText.style.display = 'none';
+            btnSpinner.style.display = 'inline';
+            
+            try {
+                // Send email using EmailJS with your template
+                const result = await emailjs.send(
+                    EMAILJS_CONFIG.SERVICE_ID,
+                    EMAILJS_CONFIG.TEMPLATE_ID,
+                    templateParams
+                );
+                
+                console.log('Email sent successfully:', result);
+                showMessage(`✅ Vielen Dank für Ihre Nachricht! Sie wurde erfolgreich an moritzpahrmann6@gmail.com gesendet.\n\nVon: ${templateParams.name}\nEmail: ${templateParams.from_email}\nBetreff: ${templateParams.subjekt}\nGesendet: ${templateParams.time}\n\nIch werde mich bald bei Ihnen melden.`, 'success');
+                this.reset();
+                
+            } catch (error) {
+                console.error('Email sending failed:', error);
+                showMessage('❌ Entschuldigung, beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie mich direkt unter moritzpahrmann6@gmail.com', 'error');
+            } finally {
+                resetButton();
+            }
+            
+            function resetButton() {
+                submitBtn.disabled = false;
+                btnText.style.display = 'inline';
+                btnSpinner.style.display = 'none';
+            }
+        });
+
+        // Show form messages
+        function showMessage(message, type) {
+            const messageArea = document.getElementById('messageArea');
+            
+            messageArea.innerHTML = `
+                <div class="form-message ${type}">
+                    ${message.replace(/\n/g, '<br>')}
+                </div>
+            `;
+            
+            // Auto-hide success messages after 8 seconds
+            if (type === 'success') {
+                setTimeout(() => {
+                    messageArea.innerHTML = '';
+                }, 8000);
+            }
+            
+            // Scroll to message
+            messageArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+
+    <style>
+        .email-info {
+            margin-top: 40px;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            border: 1px solid rgba(74, 222, 128, 0.3);
+        }
+
+        .email-info h3 {
+            color: #4ade80;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .email-info p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .email-instructions {
+            margin-top: 30px;
+            padding: 20px;
+            background: #0f0f0f;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+
+        .email-instructions h4 {
+            color: #4ade80;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .email-instructions p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .email-instructions ol {
+            margin-left: 20px;
+            color: #ccc;
+        }
+
+        .email-instructions li {
+            margin-bottom: 8px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .email-instructions a {
+            color: #4ade80;
+            text-decoration: none;
+        }
+
+        .email-instructions a:hover {
+            text-decoration: underline;
+        }
+
+        #messageArea {
+            margin-bottom: 20px;
+        }
+
+        .form-message {
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            text-align: left;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .form-message.success {
+            background: #2d5a27;
+            color: #4ade80;
+            border: 1px solid #4ade80;
+        }
+
+        .form-message.error {
+            background: #5a2d2d;
+            color: #ff6b6b;
+            border: 1px solid #ff6b6b;
+        }
+
+        #btnSpinner {
+            font-size: 14px;
+        }
+    </style>
+</body>
+</html>
