@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moritz Pahrmann - VFX Artist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html">MBP</a>
+            </div>
+            <div class="nav-links">
+                <a href="about.html">About me</a>
+                <a href="contact.html">Contact</a>
+                <a href="data-protection.html">data protection</a>
+                <a href="legal-info.html">Legal info</a>
+            </div>
+            <div class="nav-social">
+                <a href="#" class="social-icon">📷</a>
+                <a href="#" class="social-icon">📧</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <!-- Gray placeholder for 3D bedroom scene -->
+            <div class="placeholder-image hero-placeholder">
+                <span>3D Bedroom Scene<br>(Replace with hero image)</span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Moritz Pahrmann</h1>
+            <p class="hero-subtitle">VFX ARTIST</p>
+        </div>
+    </section>
+
+    <!-- My Story Section -->
+    <section class="story-section">
+        <div class="story-container">
+            <div class="story-content">
+                <h2>My<br>Story</h2>
+                <div class="divider"></div>
+                <button class="read-more-btn">Read More</button>
+            </div>
+            <div class="story-info">
+                <h3>Get to Know My</h3>
+                <p>I am currently a student specializing in 3D Visual Effects at FOI. VRM and would like to introduce my work and connect with you.</p>
+                <p>I create high-quality 3D renders and designs that can support your next digital visualization project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <h2 class="projects-title">PROJEKTS</h2>
+        <p class="projects-description">This is where I showcase a selection of 3D renders I created during my studies and for freelance projects. Each piece reflects my passion for visual storytelling, technical growth, and creative exploration in the world of digital design.</p>
+        
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="placeholder-image project-placeholder">
+                    <span>Project Image 1<br>(Replace)</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-role">3D Animation</div>
+                    <div class="project-name">Projekt 1</div>
+                    <div class="project-description">Provisorischer Untertitel für das erste Projekt mit interessanten Details.</div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="placeholder-image project-placeholder">
+                    <span>Project Image 2<br>(Replace)</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-role">VFX Design</div>
+                    <div class="project-name">Projekt 2</div>
+                    <div class="project-description">Provisorischer Untertitel für das zweite Projekt mit kreativen Elementen.</div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <div class="placeholder-image project-placeholder">
+                    <span>Project Image 3<br>(Replace)</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-role">Motion Graphics</div>
+                    <div class="project-name">Projekt 3</div>
+                    <div class="project-description">Provisorischer Untertitel für das dritte Projekt mit dynamischen Animationen.</div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card">
+                <div class="placeholder-image project-placeholder">
+                    <span>Project Image 4<br>(Replace)</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-role">3D Rendering</div>
+                    <div class="project-name">Projekt 4</div>
+                    <div class="project-description">Provisorischer Untertitel für das vierte Projekt mit fotorealistischen Renderings.</div>
+                </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div class="project-card">
+                <div class="placeholder-image project-placeholder">
+                    <span>Project Image 5<br>(Replace)</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-role">Character Design</div>
+                    <div class="project-name">Projekt 5</div>
+                    <div class="project-description">Provisorischer Untertitel für das fünfte Projekt mit Charakterdesign.</div>
+                </div>
+            </div>
+
+            <!-- Project Card 6 -->
+            <div class="project-card">
+                <div class="placeholder-image project-placeholder">
+                    <span>Project Image 6<br>(Replace)</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-role">Environment Art</div>
+                    <div class="project-name">Projekt 6</div>
+                    <div class="project-description">Provisorischer Untertitel für das sechste Projekt mit Umgebungsgestaltung.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Work Section -->
+    <section class="student-work">
+        <h2 class="student-title">Student Work</h2>
+        
+        <!-- Main Video Display -->
+        <div class="main-video-section">
+            <h3 class="video-title">Midterm300</h3>
+            <div class="video-container" id="videoContainer">
+                <!-- Placeholder will be replaced when video loads -->
+                <div class="placeholder-video" id="videoPlaceholder">
+                    <span>▶</span>
+                    <span>Play Video<br>(Replace with video URL)</span>
+                </div>
+                <button class="play-video-btn" onclick="loadVideo()">Play Video</button>
+            </div>
+        </div>
+
+        <!-- More Videos Button -->
+        <div class="more-videos-controls">
+            <button class="more-videos-btn" onclick="toggleVideoGallery()">
+                <span id="moreVideosText">More Videos</span>
+                <span class="arrow" id="moreVideosArrow">▼</span>
+            </button>
+        </div>
+
+        <!-- Video Gallery (Hidden by default) -->
+        <div class="video-gallery" id="videoGallery" style="display: none;">
+            <div class="video-strip-container">
+                <button class="nav-arrow nav-arrow-left" onclick="scrollVideoStrip(-1)">‹</button>
+                
+                <div class="video-strip" id="videoStrip">
+                    <!-- Video Thumbnails -->
+                    <div class="video-thumbnail active" data-video="midterm300" data-title="Midterm300">
+                        <div class="placeholder-image video-thumb-placeholder">
+                            <span>Video 1<br>Midterm300</span>
+                        </div>
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="project2" data-title="Animation Project">
+                        <div class="placeholder-image video-thumb-placeholder">
+                            <span>Video 2<br>Animation</span>
+                        </div>
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="project3" data-title="VFX Demo Reel">
+                        <div class="placeholder-image video-thumb-placeholder">
+                            <span>Video 3<br>VFX Demo</span>
+                        </div>
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="project4" data-title="3D Rendering">
+                        <div class="placeholder-image video-thumb-placeholder">
+                            <span>Video 4<br>3D Render</span>
+                        </div>
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="project5" data-title="Motion Graphics">
+                        <div class="placeholder-image video-thumb-placeholder">
+                            <span>Video 5<br>Motion GFX</span>
+                        </div>
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="project6" data-title="Character Animation">
+                        <div class="placeholder-image video-thumb-placeholder">
+                            <span>Video 6<br>Character</span>
+                        </div>
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="nav-arrow nav-arrow-right" onclick="scrollVideoStrip(1)">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Skills Section -->
+    <section class="skills-section">
+        <h2 class="skills-title">Software Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-icon placeholder-icon">Maya</div>
+            <div class="skill-icon placeholder-icon">After Effects</div>
+            <div class="skill-icon placeholder-icon">Nuke</div>
+            <div class="skill-icon placeholder-icon">RSS</div>
+            <div class="skill-icon placeholder-icon">Unreal</div>
+            <div class="skill-icon placeholder-icon">Arnold</div>
+            <div class="skill-icon placeholder-icon">Blender</div>
+            <div class="skill-icon placeholder-icon">Photoshop</div>
+            <div class="skill-icon placeholder-icon">Affinity</div>
+            <div class="skill-icon placeholder-icon">Affinity 2</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2035 Moritz Pahrmann VFX</p>
+        <div class="footer-links">
+            <a href="data-protection.html">Datenschutz</a>
+            <a href="legal-info.html">Legal Info</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <script>
+        // Video loading function
+        function loadVideo() {
+            const videoContainer = document.getElementById('videoContainer');
+            const placeholder = document.getElementById('videoPlaceholder');
+            const playBtn = document.querySelector('.play-video-btn');
+            
+            // Replace this URL with your actual video URL
+            // For YouTube: Use the embed URL format
+            // For local video: Use relative path like './videos/midterm300.mp4'
+            const videoURL = 'YOUR_VIDEO_URL_HERE';
+            
+            if (videoURL === 'YOUR_VIDEO_URL_HERE') {
+                // Show instructions if no video URL is set
+                alert('Please replace YOUR_VIDEO_URL_HERE in the script with your actual video URL.\n\nFor YouTube: https://www.youtube.com/embed/VIDEO_ID\nFor local files: ./videos/your-video.mp4');
+                return;
+            }
+            
+            // Check if it's a YouTube URL
+            if (videoURL.includes('youtube.com') || videoURL.includes('youtu.be')) {
+                // Create YouTube iframe
+                videoContainer.innerHTML = `
+                    <iframe class="video-embed" 
+                            src="${videoURL}?autoplay=1" 
+                            allowfullscreen>
+                    </iframe>
+                `;
+            } else {
+                // Create HTML5 video element for local files
+                videoContainer.innerHTML = `
+                    <video class="video-embed" controls autoplay>
+                        <source src="${videoURL}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                `;
+            }
+        }
+
+        // Video Gallery Functions
+        let isGalleryOpen = false;
+        let currentVideoIndex = 0;
+        const videos = [
+            { id: 'midterm300', title: 'Midterm300', url: 'YOUR_VIDEO_URL_HERE' },
+            { id: 'project2', title: 'Animation Project', url: 'YOUR_VIDEO_URL_2' },
+            { id: 'project3', title: 'VFX Demo Reel', url: 'YOUR_VIDEO_URL_3' },
+            { id: 'project4', title: '3D Rendering', url: 'YOUR_VIDEO_URL_4' },
+            { id: 'project5', title: 'Motion Graphics', url: 'YOUR_VIDEO_URL_5' },
+            { id: 'project6', title: 'Character Animation', url: 'YOUR_VIDEO_URL_6' }
+        ];
+
+        function toggleVideoGallery() {
+            const gallery = document.getElementById('videoGallery');
+            const arrow = document.getElementById('moreVideosArrow');
+            const text = document.getElementById('moreVideosText');
+            
+            if (isGalleryOpen) {
+                // Close gallery
+                gallery.classList.remove('show');
+                setTimeout(() => {
+                    gallery.style.display = 'none';
+                }, 500);
+                arrow.classList.remove('rotated');
+                text.textContent = 'More Videos';
+                isGalleryOpen = false;
+            } else {
+                // Open gallery
+                gallery.style.display = 'block';
+                setTimeout(() => {
+                    gallery.classList.add('show');
+                }, 10);
+                arrow.classList.add('rotated');
+                text.textContent = 'Hide Videos';
+                isGalleryOpen = true;
+            }
+        }
+
+        function scrollVideoStrip(direction) {
+            const strip = document.getElementById('videoStrip');
+            const thumbnailWidth = 220; // 200px width + 20px gap
+            const scrollAmount = thumbnailWidth * 2; // Scroll 2 videos at a time
+            
+            strip.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        function selectVideo(videoId, title) {
+            // Update active thumbnail
+            document.querySelectorAll('.video-thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            document.querySelector(`[data-video="${videoId}"]`).classList.add('active');
+            
+            // Update main video title
+            document.querySelector('.video-title').textContent = title;
+            
+            // Reset video container to placeholder
+            const videoContainer = document.getElementById('videoContainer');
+            videoContainer.innerHTML = `
+                <div class="placeholder-video" id="videoPlaceholder">
+                    <span>▶</span>
+                    <span>Play Video<br>(Replace with video URL)</span>
+                </div>
+                <button class="play-video-btn" onclick="loadSelectedVideo('${videoId}')">Play Video</button>
+            `;
+        }
+
+        function loadSelectedVideo(videoId) {
+            const video = videos.find(v => v.id === videoId);
+            const videoContainer = document.getElementById('videoContainer');
+            
+            if (!video || video.url === 'YOUR_VIDEO_URL_HERE' || video.url.includes('YOUR_VIDEO_URL')) {
+                alert(`Please set the video URL for ${video.title}.\n\nReplace YOUR_VIDEO_URL in the videos array with the actual video URL.`);
+                return;
+            }
+            
+            // Load the selected video
+            if (video.url.includes('youtube.com') || video.url.includes('youtu.be')) {
+                videoContainer.innerHTML = `
+                    <iframe class="video-embed" 
+                            src="${video.url}?autoplay=1" 
+                            allowfullscreen>
+                    </iframe>
+                `;
+            } else {
+                videoContainer.innerHTML = `
+                    <video class="video-embed" controls autoplay>
+                        <source src="${video.url}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                `;
+            }
+        }
+
+        // Add click events to video thumbnails
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.video-thumbnail').forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                    const videoId = this.getAttribute('data-video');
+                    const title = this.getAttribute('data-title');
+                    selectVideo(videoId, title);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
