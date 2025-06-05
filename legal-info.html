@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Info - Moritz Pahrmann VFX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-cube">
+                <div class="cube-face cube-front"></div>
+                <div class="cube-face cube-back"></div>
+                <div class="cube-face cube-right"></div>
+                <div class="cube-face cube-left"></div>
+                <div class="cube-face cube-top"></div>
+                <div class="cube-face cube-bottom"></div>
+            </div>
+            <div class="loading-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            <div class="loading-text">
+                <span class="glitch-text" data-text="LOADING">LOADING</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div id="pageTransition" class="page-transition"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html">MBP</a>
+            </div>
+            <div class="nav-links">
+                <a href="about.html">About me</a>
+                <a href="contact.html">Contact</a>
+                <a href="data-protection.html">data protection</a>
+                <a href="legal-info.html" class="active">Legal info</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://www.instagram.com/moritzpahrmann" target="_blank" class="social-icon">📷</a>
+                <a href="https://www.artstation.com/moritzpahrmann" target="_blank" class="social-icon">🎨</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Legal Info Content -->
+    <main class="legal-main">
+        <section class="legal-hero">
+            <div class="legal-container">
+                <h1 class="page-title" data-translate="legalInfoTitle">Legal Info</h1>
+                
+                <div class="legal-content">
+                    <div class="legal-section">
+                        <h2 data-translate="imprintTitle">Imprint</h2>
+                        <p class="last-updated" data-translate="accordingTo">Information according to § 5 TMG</p>
+                        
+                        <h3 data-translate="responsibleTitle">Responsible for content according to § 55 Abs. 2 RStV:</h3>
+                        <div class="contact-info">
+                            <p><strong data-translate="responsibleName">Moritz Pahrmann</strong><br>
+                            <span data-translate="responsibleSubtitle">VFX Artist & Student</span><br><br>
+                            <span data-translate="responsibleEmail">E-Mail: moritzpahrmann6@gmail.com</span><br>
+                            <span data-translate="responsiblePhone">Phone: (+49) 1511 7809220</span></p>
+                            <span data-translate="responsibleAdress">Adress: Am Mondschein 26, 59557 Lippstadt</span></p>
+                        </div>
+                        
+                        <h3 data-translate="contentLiabilityTitle">Liability for Content</h3>
+                        <p data-translate="contentLiabilityText">The contents of this website have been created with great care. As a private site operator, I am responsible for my own content in accordance with § 7 (1) TMG. However, I am not obliged to monitor transmitted or stored third-party information (§§ 8–10 TMG).</p>
+                        
+                        <h3 data-translate="linksLiabilityTitle">Liability for Links</h3>
+                        <p data-translate="linksLiabilityText">This website may contain links to external websites. I have no influence over the content of these external sites. At the time of linking, no legal violations were evident.</p>
+                        
+                        <h3 data-translate="copyrightTitle">Copyright</h3>
+                        <p data-translate="copyrightText">All content published on this website (e.g. texts, images, videos) is subject to German copyright law. Any use outside this website requires the prior written permission of the author.</p>
+                        
+                        <h3 data-translate="disputeResolutionTitle">Note on Online Dispute Resolution</h3>
+                        <p data-translate="disputeResolutionText1">I am neither obligated nor willing to participate in a dispute resolution procedure before a consumer arbitration board. <a href="https://ec.europa.eu/consumers/odr/" target="_blank" style="color: #4ade80;">https://ec.europa.eu/consumers/odr/</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2035 Moritz Pahrmann VFX</p>
+        <div class="footer-links">
+            <a href="data-protection.html">Datenschutz</a>
+            <a href="legal-info.html">Legal Info</a>
+        </div>
+    </footer>
+
+    <!-- Language Toggle Button -->
+    <div class="language-toggle" id="languageToggle">
+        <button class="lang-btn" onclick="toggleLanguage()">
+            <span id="langText">EN</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

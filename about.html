@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Moritz Pahrmann VFX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-cube">
+                <div class="cube-face cube-front"></div>
+                <div class="cube-face cube-back"></div>
+                <div class="cube-face cube-right"></div>
+                <div class="cube-face cube-left"></div>
+                <div class="cube-face cube-top"></div>
+                <div class="cube-face cube-bottom"></div>
+            </div>
+            <div class="loading-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            <div class="loading-text">
+                <span class="glitch-text" data-text="LOADING">LOADING</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div id="pageTransition" class="page-transition"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html">MBP</a>
+            </div>
+            <div class="nav-links">
+                <a href="about.html" class="active">About me</a>
+                <a href="contact.html">Contact</a>
+                <a href="data-protection.html">data protection</a>
+                <a href="legal-info.html">Legal info</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://www.instagram.com/moritzpahrmann" target="_blank" class="social-icon">📷</a>
+                <a href="https://www.artstation.com/moritzpahrmann" target="_blank" class="social-icon">🎨</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Me Content -->
+    <main class="about-main">
+        <section class="about-hero">
+            <div class="about-container">
+                <h1 class="page-title">About me</h1>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="intro-text">I'm a 20-year-old student currently pursuing my passion for 3D visual effects, with the goal of building my own freelance career in the industry. In April 2024, I began my journey at PIXL VISN, where I quickly discovered that 3D isn't just a field of study for me—it's something I've truly fallen in love with.</p>
+                        
+                        <p>What excites me most about working in 3D is the constant variety of challenges, whether creative or technical. I enjoy pushing boundaries, solving problems, and learning new techniques that help me grow with every project. From concept to final render, I see each piece as an opportunity to tell a story, express an idea, or bring an imagined world to life.</p>
+                        
+                        <p>My aim is to express my creativity through 3D visual effects while working on a wide range of projects—whether it's environments, product visualization, motion graphics, or something entirely new. I'm always open to collaboration and new experiences, and I'm excited to continue evolving as an artist in this dynamic and ever-changing field.</p>
+                    </div>
+                    
+                    <div class="about-image">
+                        <div class="placeholder-image about-placeholder">
+                            <span>Profile Image<br>(Replace with your photo)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Customers Section -->
+        <section class="customers-section">
+            <div class="about-container">
+                <h2 class="section-title">My customers</h2>
+                
+                <div class="customers-content">
+                    <div class="customers-text">
+                        <p>Here you'll find an overview of some of my valued clients and collaborators.</p>
+                        
+                        <p>Each project and partnership has contributed to my growth as a 3D artist helping me expand my skills and approach. Whether it's for commercial use or artistic requirements.</p>
+                        
+                        <p>The diversity of my clients reflects not only the versatility of my work, but also the effectiveness of my creative approach.</p>
+                    </div>
+                    
+                    <div class="customers-gallery">
+                        <div class="customer-item">
+                            <div class="placeholder-image customer-placeholder">
+                                <span>Client Logo 1<br>(Replace)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-item">
+                            <div class="placeholder-image customer-placeholder">
+                                <span>Client Logo 2<br>(Replace)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-item">
+                            <div class="placeholder-image customer-placeholder">
+                                <span>Client Logo 3<br>(Replace)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-item">
+                            <div class="placeholder-image customer-placeholder">
+                                <span>Client Logo 4<br>(Replace)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2035 Moritz Pahrmann VFX</p>
+        <div class="footer-links">
+            <a href="data-protection.html">Datenschutz</a>
+            <a href="legal-info.html">Legal Info</a>
+        </div>
+    </footer>
+
+    <!-- Language Toggle Button -->
+    <div class="language-toggle" id="languageToggle">
+        <button class="lang-btn" onclick="toggleLanguage()">
+            <span id="langText">EN</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

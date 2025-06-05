@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moritz Pahrmann - VFX Artist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-cube">
+                <div class="cube-face cube-front"></div>
+                <div class="cube-face cube-back"></div>
+                <div class="cube-face cube-right"></div>
+                <div class="cube-face cube-left"></div>
+                <div class="cube-face cube-top"></div>
+                <div class="cube-face cube-bottom"></div>
+            </div>
+            <div class="loading-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            <div class="loading-text">
+                <span class="glitch-text" data-text="LOADING">LOADING</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div id="pageTransition" class="page-transition"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html">MBP</a>
+            </div>
+            <div class="nav-links">
+                <a href="about.html">About me</a>
+                <a href="contact.html">Contact</a>
+                <a href="data-protection.html">data protection</a>
+                <a href="legal-info.html">Legal info</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://www.instagram.com/moritzpahrmann" target="_blank" class="social-icon">📷</a>
+                <a href="https://www.artstation.com/moritzpahrmann" target="_blank" class="social-icon">🎨</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <!-- StartScene.png image with fallback to placeholder -->
+            <img src="./Images/StartScene.png" alt="3D Scene by Moritz Pahrmann" class="hero-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" onload="this.nextElementSibling.style.display='none';">
+            <!-- Fallback placeholder if StartScene.png not found -->
+            <div class="placeholder-image hero-placeholder">
+                <span>StartScene.png<br>(Place your StartScene.png in Images folder)</span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Moritz Pahrmann</h1>
+            <p class="hero-subtitle">VFX ARTIST</p>
+        </div>
+    </section>
+
+    <!-- My Story Section -->
+    <section class="story-section">
+        <div class="story-container">
+            <div class="story-content">
+                <h2>My<br>Story</h2>
+                <div class="divider"></div>
+                <a href="about.html" class="read-more-btn">Read More</a>
+            </div>
+            <div class="story-info">
+                <h3>Get to Know me</h3>
+                <p>I am currently a student specializing in 3D Visual Effects at PIXL VISN and would like to introduce my work and connect with you.</p>
+                <p>I create high-quality 3D renders and designs that can support your next digital visualization project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <h2 class="projects-title">PROJEKTS</h2>
+        <p class="projects-description">This is where I showcase a selection of 3D renders I created during my studies and for freelance projects. Each piece reflects my passion for visual storytelling, technical growth, and creative exploration in the world of digital design.</p>
+        
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="placeholder-image project-placeholder">
+                    <span>Project Image 1<br>(Replace)</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-role">3D Animation</div>
+                    <div class="project-name">Projekt 1</div>
+                    <div class="project-description">Provisorischer Untertitel für das erste Projekt mit interessanten Details.</div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="placeholder-image project-placeholder">
+                    <span>Project Image 2<br>(Replace)</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-role">VFX Design</div>
+                    <div class="project-name">Projekt 2</div>
+                    <div class="project-description">Provisorischer Untertitel für das zweite Projekt mit kreativen Elementen.</div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <div class="placeholder-image project-placeholder">
+                    <span>Project Image 3<br>(Replace)</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-role">Motion Graphics</div>
+                    <div class="project-name">Projekt 3</div>
+                    <div class="project-description">Provisorischer Untertitel für das dritte Projekt mit dynamischen Animationen.</div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card">
+                <div class="placeholder-image project-placeholder">
+                    <span>Project Image 4<br>(Replace)</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-role">3D Rendering</div>
+                    <div class="project-name">Projekt 4</div>
+                    <div class="project-description">Provisorischer Untertitel für das vierte Projekt mit fotorealistischen Renderings.</div>
+                </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div class="project-card">
+                <div class="placeholder-image project-placeholder">
+                    <span>Project Image 5<br>(Replace)</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-role">Character Design</div>
+                    <div class="project-name">Projekt 5</div>
+                    <div class="project-description">Provisorischer Untertitel für das fünfte Projekt mit Charakterdesign.</div>
+                </div>
+            </div>
+
+            <!-- Project Card 6 -->
+            <div class="project-card">
+                <div class="placeholder-image project-placeholder">
+                    <span>Project Image 6<br>(Replace)</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-role">Environment Art</div>
+                    <div class="project-name">Projekt 6</div>
+                    <div class="project-description">Provisorischer Untertitel für das sechste Projekt mit Umgebungsgestaltung.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Work Section - REVERSED VIDEO ORDER -->
+    <section class="student-work">
+        <h2 class="student-title">Student Work</h2>
+        
+        <!-- Main Video Display -->
+        <div class="main-video-section">
+            <h3 class="video-title">Production Training 500</h3>
+            <div class="video-container" id="videoContainer">
+                <!-- Video Loading Overlay -->
+                <div class="video-loading-overlay" id="videoLoadingOverlay" style="display: none;">
+                    <div class="video-spinner">
+                        <div class="spinner-ring"></div>
+                        <div class="spinner-ring"></div>
+                        <div class="spinner-ring"></div>
+                    </div>
+                    <p>Loading Video...</p>
+                </div>
+                <!-- Main video preview image -->
+                <img src="./Images/ProductionTraining500.png" alt="Production Training 500" class="main-video-preview" id="mainVideoPreview">
+                <div class="main-video-overlay"></div>
+                <button class="play-video-btn" onclick="loadVideo()">Play Video</button>
+            </div>
+        </div>
+
+        <!-- More Videos Button -->
+        <div class="more-videos-controls">
+            <button class="more-videos-btn" onclick="toggleVideoGallery()">
+                <span id="moreVideosText">More Videos</span>
+                <span class="arrow" id="moreVideosArrow">▼</span>
+            </button>
+        </div>
+
+        <!-- Video Gallery (Hidden by default) - REVERSED ORDER -->
+        <div class="video-gallery" id="videoGallery" style="display: none;">
+            <div class="video-strip-container">
+                <button class="nav-arrow nav-arrow-left" onclick="scrollVideoStrip(-1)">‹</button>
+                
+                <div class="video-strip" id="videoStrip">
+                    <!-- Video Thumbnails - REVERSED ORDER -->
+                    <div class="video-thumbnail active" data-video="productiontraining500" data-title="Production Training 500">
+                        <img src="./Images/ProductionTraining500.png" alt="Production Training 500" class="video-thumb-image">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="productiontraining400" data-title="Production Training 400">
+                        <img src="./Images/ProductionTraining400.png" alt="Production Training 400" class="video-thumb-image">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="comp400" data-title="Comp 400">
+                        <img src="./Images/Comp400.png" alt="Comp 400" class="video-thumb-image">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="midterm400" data-title="Midterm 400">
+                        <img src="./Images/Midterm400.png" alt="Midterm 400" class="video-thumb-image">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="comp300" data-title="Comp 300">
+                        <img src="./Images/Comp300.png" alt="Comp 300" class="video-thumb-image">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="endterm300" data-title="Endterm 300">
+                        <img src="./Images/Endterm300.png" alt="Endterm 300" class="video-thumb-image">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="midterm300" data-title="Midterm 300">
+                        <img src="./Images/Midterm300.png" alt="Midterm 300" class="video-thumb-image">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="midterm200" data-title="Midterm 200">
+                        <img src="./Images/Midterm200.png" alt="Midterm 200" class="video-thumb-image">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="nav-arrow nav-arrow-right" onclick="scrollVideoStrip(1)">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Skills Section -->
+    <section class="skills-section">
+        <h2 class="skills-title">Software Skills</h2>
+        <div class="skills-grid">
+            <a href="https://www.autodesk.com/products/maya" target="_blank" class="skill-btn">Maya</a>
+            <a href="https://www.autodesk.com/products/arnold" target="_blank" class="skill-btn">Arnold</a>
+            <a href="https://www.foundry.com/products/nuke" target="_blank" class="skill-btn">Nuke</a>
+            <a href="https://www.sidefx.com/products/houdini" target="_blank" class="skill-btn">Houdini</a>
+            <a href="https://www.unrealengine.com" target="_blank" class="skill-btn">Unreal</a>
+            <a href="https://www.maxon.net/zbrush" target="_blank" class="skill-btn">ZBrush</a>
+            <a href="https://www.blender.org" target="_blank" class="skill-btn">Blender</a>
+            <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" class="skill-btn">DaVinci Resolve</a>
+            <a href="https://www.marvelousdesigner.com" target="_blank" class="skill-btn">Marvelous Designer</a>
+            <a href="https://affinity.serif.com/designer" target="_blank" class="skill-btn">Affinity Designer</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2035 Moritz Pahrmann VFX</p>
+        <div class="footer-links">
+            <a href="data-protection.html">Datenschutz</a>
+            <a href="legal-info.html">Legal Info</a>
+        </div>
+    </footer>
+
+    <!-- Language Toggle Button -->
+    <div class="language-toggle" id="languageToggle">
+        <button class="lang-btn" onclick="toggleLanguage()">
+            <span id="langText">EN</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <script>
+        // Video loading function - REALISTIC LOADING
+        function loadVideo() {
+            const videoContainer = document.getElementById('videoContainer');
+            const loadingOverlay = document.getElementById('videoLoadingOverlay');
+            
+            // USE FIRST VIDEO - Production Training 500
+            const videoURL = './videos/ProductionTraining500.mov';
+            
+            // Show loading animation
+            loadingOverlay.style.display = 'flex';
+            
+            // Create video element and monitor actual loading
+            const video = document.createElement('video');
+            video.className = 'video-embed';
+            video.controls = true;
+            video.autoplay = true;
+            
+            // Add sources
+            const mp4Source = document.createElement('source');
+            mp4Source.src = videoURL;
+            mp4Source.type = 'video/mp4';
+            
+            const movSource = document.createElement('source');
+            movSource.src = videoURL;
+            movSource.type = 'video/quicktime';
+            
+            video.appendChild(mp4Source);
+            video.appendChild(movSource);
+            
+            // Handle actual loading events
+            video.addEventListener('loadstart', () => {
+                // Video started loading
+                console.log('Video loading started...');
+            });
+            
+            video.addEventListener('canplay', () => {
+                // Video can start playing (enough data loaded)
+                console.log('Video ready to play');
+                setTimeout(() => {
+                    loadingOverlay.style.display = 'none';
+                    videoContainer.innerHTML = '';
+                    videoContainer.appendChild(video);
+                }, 200); // Small buffer for smooth transition
+            });
+            
+            video.addEventListener('error', () => {
+                // Video failed to load
+                console.log('Video failed to load');
+                loadingOverlay.style.display = 'none';
+                videoContainer.innerHTML = `
+                    <div class="video-error" style="display: flex; align-items: center; justify-content: center; height: 100%; color: #ff6b6b; text-align: center;">
+                        <div>
+                            <p>❌ Video nicht gefunden: ${videoURL}</p>
+                            <p>Bitte prüfen Sie, dass das Video im './videos/' Ordner ist</p>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            // Start loading the video
+            video.load();
+        }
+
+        // Video Gallery Functions
+        let isGalleryOpen = false;
+        let currentVideoIndex = 0;
+        // REVERSED VIDEO ORDER
+        const videos = [
+            { id: 'productiontraining500', title: 'Production Training 500', url: './videos/ProductionTraining500.mov' },
+            { id: 'productiontraining400', title: 'Production Training 400', url: './videos/ProductionTraining400.mov' },
+            { id: 'comp400', title: 'Comp 400', url: './videos/Comp400.mov' },
+            { id: 'midterm400', title: 'Midterm 400', url: './videos/Midterm400.mp4' },
+            { id: 'comp300', title: 'Comp 300', url: './videos/Comp300.mov' },
+            { id: 'endterm300', title: 'Endterm 300', url: './videos/Endterm300.mov' },
+            { id: 'midterm300', title: 'Midterm 300', url: './videos/Midterm300.mov' },
+            { id: 'midterm200', title: 'Midterm 200', url: './videos/Midterm200.mp4' }
+        ];
+
+        function toggleVideoGallery() {
+            const gallery = document.getElementById('videoGallery');
+            const arrow = document.getElementById('moreVideosArrow');
+            const text = document.getElementById('moreVideosText');
+            
+            if (isGalleryOpen) {
+                // Close gallery
+                gallery.classList.remove('show');
+                setTimeout(() => {
+                    gallery.style.display = 'none';
+                }, 500);
+                arrow.classList.remove('rotated');
+                text.textContent = 'More Videos';
+                isGalleryOpen = false;
+            } else {
+                // Open gallery
+                gallery.style.display = 'block';
+                setTimeout(() => {
+                    gallery.classList.add('show');
+                }, 10);
+                arrow.classList.add('rotated');
+                text.textContent = 'Hide Videos';
+                isGalleryOpen = true;
+            }
+        }
+
+        function scrollVideoStrip(direction) {
+            const strip = document.getElementById('videoStrip');
+            const thumbnailWidth = 220; // 200px width + 20px gap
+            const scrollAmount = thumbnailWidth * 2; // Scroll 2 videos at a time
+            
+            strip.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        function selectVideo(videoId, title) {
+            // Update active thumbnail
+            document.querySelectorAll('.video-thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            document.querySelector(`[data-video="${videoId}"]`).classList.add('active');
+            
+            // Update main video title
+            document.querySelector('.video-title').textContent = title;
+            
+            // Find the video data for the image
+            const video = videos.find(v => v.id === videoId);
+            const imageName = getImageNameFromVideoId(videoId);
+            
+            // Reset video container with new preview image and overlay
+            const videoContainer = document.getElementById('videoContainer');
+            videoContainer.innerHTML = `
+                <div class="video-loading-overlay" id="videoLoadingOverlay" style="display: none;">
+                    <div class="video-spinner">
+                        <div class="spinner-ring"></div>
+                        <div class="spinner-ring"></div>
+                        <div class="spinner-ring"></div>
+                    </div>
+                    <p>Loading Video...</p>
+                </div>
+                <img src="./Images/${imageName}.png" alt="${title}" class="main-video-preview" id="mainVideoPreview">
+                <div class="main-video-overlay"></div>
+                <button class="play-video-btn" onclick="loadSelectedVideo('${videoId}')">Play Video</button>
+            `;
+        }
+        
+        // Helper function to get image name from video ID
+        function getImageNameFromVideoId(videoId) {
+            const imageMap = {
+                'productiontraining500': 'ProductionTraining500',
+                'productiontraining400': 'ProductionTraining400',
+                'comp400': 'Comp400',
+                'midterm400': 'Midterm400',
+                'comp300': 'Comp300',
+                'endterm300': 'Endterm300',
+                'midterm300': 'Midterm300',
+                'midterm200': 'Midterm200'
+            };
+            return imageMap[videoId] || 'ProductionTraining500';
+        }
+
+        function loadSelectedVideo(videoId) {
+            const video = videos.find(v => v.id === videoId);
+            const videoContainer = document.getElementById('videoContainer');
+            const loadingOverlay = document.getElementById('videoLoadingOverlay');
+            
+            if (!video) {
+                alert(`Video not found: ${videoId}`);
+                return;
+            }
+            
+            // Show loading animation
+            loadingOverlay.style.display = 'flex';
+            
+            // Create video element and monitor actual loading
+            const videoElement = document.createElement('video');
+            videoElement.className = 'video-embed';
+            videoElement.controls = true;
+            videoElement.autoplay = true;
+            
+            // Add sources
+            const mp4Source = document.createElement('source');
+            mp4Source.src = video.url;
+            mp4Source.type = 'video/mp4';
+            
+            const movSource = document.createElement('source');
+            movSource.src = video.url;
+            movSource.type = 'video/quicktime';
+            
+            videoElement.appendChild(mp4Source);
+            videoElement.appendChild(movSource);
+            
+            // Handle actual loading events
+            videoElement.addEventListener('canplay', () => {
+                // Video can start playing
+                setTimeout(() => {
+                    loadingOverlay.style.display = 'none';
+                    videoContainer.innerHTML = '';
+                    videoContainer.appendChild(videoElement);
+                }, 200);
+            });
+            
+            videoElement.addEventListener('error', () => {
+                // Video failed to load
+                loadingOverlay.style.display = 'none';
+                videoContainer.innerHTML = `
+                    <div class="video-error" style="display: flex; align-items: center; justify-content: center; height: 100%; color: #ff6b6b; text-align: center;">
+                        <div>
+                            <p>❌ Video nicht gefunden: ${video.url}</p>
+                            <p>Bitte prüfen Sie, dass das Video im './videos/' Ordner ist</p>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            // Start loading the video
+            videoElement.load();
+        }
+        
+        function handleVideoError(video) {
+            video.style.display = 'none';
+            const errorDiv = video.nextElementSibling;
+            if (errorDiv && errorDiv.classList.contains('video-error')) {
+                errorDiv.style.display = 'flex';
+                errorDiv.style.alignItems = 'center';
+                errorDiv.style.justifyContent = 'center';
+                errorDiv.style.height = '100%';
+                errorDiv.style.color = '#ff6b6b';
+                errorDiv.style.textAlign = 'center';
+            }
+        }
+
+        // Add click events to video thumbnails
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.video-thumbnail').forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                    const videoId = this.getAttribute('data-video');
+                    const title = this.getAttribute('data-title');
+                    selectVideo(videoId, title);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
