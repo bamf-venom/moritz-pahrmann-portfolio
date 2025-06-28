@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Moritz Pahrmann VFX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "V_GdklqrG-dfyXQ3M",
+            });
+        })();
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-cube">
+                <div class="cube-face cube-front"></div>
+                <div class="cube-face cube-back"></div>
+                <div class="cube-face cube-right"></div>
+                <div class="cube-face cube-left"></div>
+                <div class="cube-face cube-top"></div>
+                <div class="cube-face cube-bottom"></div>
+            </div>
+            <div class="loading-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            <div class="loading-text">
+                <span class="glitch-text" data-text="LOADING">LOADING</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div id="pageTransition" class="page-transition"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html">MBP</a>
+            </div>
+            
+            <!-- Desktop Navigation Links - MOVED TO CENTER -->
+            <div class="nav-links">
+                <a href="about.html">About me</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="data-protection.html">data protection</a>
+                <a href="legal-info.html">Legal info</a>
+            </div>
+            
+            <!-- Desktop Social Icons - MOVED TO RIGHT -->
+            <div class="nav-social">
+                <a href="https://www.instagram.com/moritzpahrmann" target="_blank" class="social-icon"><img src="./Images/instagramIcon.svg" alt="Instagram" style="width: 20px; height: 20px;"></a>
+                <a href="https://www.artstation.com/moritzpahrmann" target="_blank" class="social-icon"><img src="./Images/ArtstationIcon.svg" alt="Artstation" style="width: 20px; height: 20px;"></a>
+            </div>
+            
+            <!-- Mobile Social Icons - CENTER FOR MOBILE -->
+            <div class="nav-social-mobile">
+                <a href="https://www.instagram.com/moritzpahrmann" target="_blank" class="social-icon"><img src="./Images/instagramIcon.svg" alt="Instagram" style="width: 20px; height: 20px;"></a>
+                <a href="https://www.artstation.com/moritzpahrmann" target="_blank" class="social-icon"><img src="./Images/ArtstationIcon.svg" alt="Artstation" style="width: 20px; height: 20px;"></a>
+            </div>
+            
+            <!-- Mobile Hamburger Menu Button -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-content">
+                <div class="mobile-nav-links">
+                    <a href="about.html" class="mobile-nav-link">About me</a>
+                    <a href="contact.html" class="mobile-nav-link active">Contact</a>
+                    <a href="data-protection.html" class="mobile-nav-link">Data protection</a>
+                    <a href="legal-info.html" class="mobile-nav-link">Legal info</a>
+                </div>
+                <div class="mobile-nav-social">
+                    <a href="https://www.instagram.com/moritzpahrmann" target="_blank" class="mobile-social-icon"><img src="./Images/instagramIcon.svg" alt="Instagram" style="width: 20px; height: 20px;"></a>
+                    <a href="https://www.artstation.com/moritzpahrmann" target="_blank" class="mobile-social-icon"><img src="./Images/ArtstationIcon.svg" alt="Artstation" style="width: 20px; height: 20px;"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <main class="contact-main">
+        <section class="contact-hero">
+            <div class="contact-container">
+                <h1 class="page-title">Contact</h1>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 data-translate="contactSubtitle">Get in Contact with Moritz Pahrmann</h2>
+                        <p class="contact-subtitle" data-translate="contactLanguageNote">Please write in English or German</p>
+                        
+                        <!-- ADDED SPACING PARAGRAPH HERE -->
+                        <p class="contact-spacing">&nbsp;</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <strong data-translate="email">Email:</strong> moritzpahrmann6@gmail.com
+                            </div>
+                            <div class="contact-item">
+                                <strong data-translate="phone">Phone:</strong> (+49) 1511 7809220
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-section">
+                        <!-- Success/Error Message Area -->
+                        <div id="messageArea"></div>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vorname" data-translate="firstName">First Name *</label>
+                                    <input type="text" id="vorname" name="vorname" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nachname" data-translate="lastName">Last Name *</label>
+                                    <input type="text" id="nachname" name="nachname" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" data-translate="emailAddress">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="betreff" data-translate="subject">Subject</label>
+                                <input type="text" id="betreff" name="betreff" placeholder="Subject of your message">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nachricht" data-translate="message">Message *</label>
+                                <textarea id="nachricht" name="nachricht" rows="6" required placeholder="Your message here..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn" id="submitBtn">
+                                <span id="btnText" data-translate="send">Send</span>
+                                <span id="btnSpinner" style="display: none;">📧 Sending...</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2035 Moritz Pahrmann VFX</p>
+        <div class="footer-links">
+            <a href="data-protection.html">Datenschutz</a>
+            <a href="legal-info.html">Legal Info</a>
+        </div>
+    </footer>
+
+    <!-- Language Toggle Button -->
+    <div class="language-toggle" id="languageToggle">
+        <button class="lang-btn" onclick="toggleLanguage()">
+            <span id="langText">EN</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

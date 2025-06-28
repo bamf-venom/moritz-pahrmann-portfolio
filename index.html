@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Technische Meta-Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Titel und Seitenbeschreibung -->
+    <title>Moritz Pahrmann – VFX Artist Portfolio</title>
+    <meta name="description" content="Offizielles Portfolio von Moritz Pahrmann, angehender VFX Artist mit Fokus auf Environment Modeling, 3D-Animation und visuellen Effekten.">
+    <meta name="keywords" content="Moritz Pahrmann, VFX Artist, 3D Artist, Visual Effects, Environment Modeling, Animation, Portfolio, PIXL VISN">
+    <meta name="author" content="Moritz Pahrmann">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="de">
+
+    <!-- Open Graph für Facebook, LinkedIn etc. -->
+    <meta property="og:title" content="Moritz Pahrmann – VFX Artist Portfolio">
+    <meta property="og:description" content="Ein kreatives Portfolio im Bereich VFX mit Fokus auf 3D-Animation und Environment Design.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://moritzpahrmann.netlify.app/about">
+    <meta property="og:image" content="https://moritzpahrmann.netlify./Images/DesktopTumbnail.png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Moritz Pahrmann – VFX Artist Portfolio">
+    <meta name="twitter:description" content="Entdecke das kreative VFX-Portfolio von Moritz Pahrmann mit Animationen, Environments und mehr.">
+    <meta name="twitter:image" content="https://moritzpahrmann.netlify.app/./Images/DesktopTumbnail.png">
+
+    <!-- Theme & Appearance -->
+    <meta name="theme-color" content="#2c2c2c">
+    <meta name="color-scheme" content="dark light">
+
+    <!-- Favicons (optional, aber empfohlen) -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Fonts & Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Titel-Vorschau für Suchmaschinen -->
+    <link rel="canonical" href="https://moritzpahrmann.netlify.app/about">
+
+    <!-- Schema.org Structured Data für Google & Co. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Moritz Pahrmann",
+      "url": "https://moritzpahrmann.netlify.app",
+      "image": "https://moritzpahrmann.netlify.app/./Images/DesktopTumbnail.png",
+      "sameAs": [
+        "https://www.artstation.com/moritzpahrmann",
+        "https://www.linkedin.com/in/bamfvenom",
+        "https://www.instagram.com/moritzpahrmann"
+      ],
+      "jobTitle": "VFX Artist",
+      "description": "Offizielles Portfolio von Moritz Pahrmann, spezialisiert auf Environment Modeling, 3D-Animation und Visual Effects.",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "PIXL VISN media arts academy"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance / Student"
+      },
+      "knowsAbout": [
+        "3D Animation",
+        "Visual Effects",
+        "Environment Modeling",
+        "Compositing",
+        "Digital Sculpting",
+        "CGI Lighting"
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://moritzpahrmann.netlify.app"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-cube">
+                <div class="cube-face cube-front"></div>
+                <div class="cube-face cube-back"></div>
+                <div class="cube-face cube-right"></div>
+                <div class="cube-face cube-left"></div>
+                <div class="cube-face cube-top"></div>
+                <div class="cube-face cube-bottom"></div>
+            </div>
+            <div class="loading-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            <div class="loading-text">
+                <span class="glitch-text" data-text="LOADING">LOADING</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div id="pageTransition" class="page-transition"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html">MBP</a>
+            </div>
+            
+            <!-- Desktop Navigation Links - MOVED TO CENTER -->
+            <div class="nav-links">
+                <a href="about.html">About me</a>
+                <a href="contact.html">Contact</a>
+                <a href="data-protection.html">data protection</a>
+                <a href="legal-info.html">Legal info</a>
+            </div>
+            
+            <!-- Desktop Social Icons - MOVED TO RIGHT -->
+            <div class="nav-social">
+                <a href="https://www.instagram.com/moritzpahrmann" target="_blank" class="social-icon"><img src="./Images/instagramIcon.svg" alt="Instagram" class="lazy-load" loading="lazy" style="width: 20px; height: 20px;"></a>
+                <a href="https://www.artstation.com/moritzpahrmann" target="_blank" class="social-icon"><img src="./Images/ArtstationIcon.svg" alt="Artstation" class="lazy-load" loading="lazy" style="width: 20px; height: 20px;"></a>
+            </div>
+            
+            <!-- Mobile Social Icons - CENTER FOR MOBILE -->
+            <div class="nav-social-mobile">
+                <a href="https://www.instagram.com/moritzpahrmann" target="_blank" class="social-icon"><img src="./Images/instagramIcon.svg" alt="Instagram" class="lazy-load" loading="lazy" style="width: 20px; height: 20px;"></a>
+                <a href="https://www.artstation.com/moritzpahrmann" target="_blank" class="social-icon"><img src="./Images/ArtstationIcon.svg" alt="Artstation" class="lazy-load" loading="lazy" style="width: 20px; height: 20px;"></a>
+            </div>
+            
+            <!-- Mobile Hamburger Menu Button -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-content">
+                <div class="mobile-nav-links">
+                    <a href="about.html" class="mobile-nav-link">About me</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                    <a href="data-protection.html" class="mobile-nav-link">Data protection</a>
+                    <a href="legal-info.html" class="mobile-nav-link">Legal info</a>
+                </div>
+                <div class="mobile-nav-social">
+                    <a href="https://www.instagram.com/moritzpahrmann" target="_blank" class="mobile-social-icon"><img src="./Images/instagramIcon.svg" alt="Instagram" class="lazy-load" loading="lazy" style="width: 20px; height: 20px;"></a>
+                    <a href="https://www.artstation.com/moritzpahrmann" target="_blank" class="mobile-social-icon"><img src="./Images/ArtstationIcon.svg" alt="Artstation" class="lazy-load" loading="lazy" style="width: 20px; height: 20px;"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <!-- RESPONSIVE IMAGE: StartScene.png on mobile, DesktopTumbnail.png on desktop -->
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" 
+                 data-src="./Images/StartScene.png" 
+                 alt="3D Scene by Moritz Pahrmann" 
+                 class="hero-image lazy-load" 
+                 id="heroImage" 
+                 loading="lazy"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" 
+                 onload="this.nextElementSibling.style.display='none';">
+            <!-- Fallback placeholder if image not found -->
+            <div class="placeholder-image hero-placeholder">
+                <span id="heroPlaceholderText">StartScene.png<br>(Place your StartScene.png in Images folder)</span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Moritz Pahrmann</h1>
+            <p class="hero-subtitle">VFX ARTIST</p>
+        </div>
+    </section>
+
+    <!-- My Story Section -->
+    <section class="story-section">
+        <div class="story-container">
+            <div class="story-content">
+                <h2>My<br>Story</h2>
+                <div class="divider"></div>
+                <a href="about.html" class="read-more-btn">Read More</a>
+            </div>
+            <div class="story-info">
+                <h3>Get to Know me</h3>
+                <p>I am currently a student specializing in 3D Visual Effects at PIXL VISN and would like to introduce my work and connect with you.</p>
+                <p>I create high-quality 3D renders and designs that can support your next digital visualization project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projectsSection">
+        <h2 class="projects-title">PROJEKTS</h2>
+        <p class="projects-description">This is where I showcase a selection of 3D renders I created during my studies and for freelance projects. Each piece reflects my passion for visual storytelling, technical growth, and creative exploration in the world of digital design.</p>
+        
+        <div class="projects-grid">
+            <!-- Project Card 1 with Like System -->
+            <div class="project-card" data-project-id="1">
+                <div class="project-image-container lazy-image-container">
+                    <div class="lazy-skeleton"></div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" data-src="./Images/Projekts/Projekt_01/ThumbnailCard.png" alt="Projekt 1 - 3D Animation" class="project-card-image lazy-load" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <div class="project-role" data-translate="project1Role">3D Animation</div>
+                    <div class="project-name">Projekt 1</div>
+                    <div class="project-description" data-translate="project1Description">Provisorischer Untertitel für das erste Projekt mit interessanten Details.</div>
+                    <!-- NEW: Like Button and Counter -->
+                    <div class="project-like-section">
+                        <button class="like-btn" data-project-id="1">
+                            <svg class="like-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.61C2.1283 5.6417 1.5487 7.04097 1.5487 8.5C1.5487 9.95903 2.1283 11.3583 3.16 12.39L12 21.23L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39467C21.7563 5.72723 21.351 5.1208 20.84 4.61Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 with Like System -->
+            <div class="project-card" data-project-id="2">
+                <div class="project-image-container lazy-image-container">
+                    <div class="lazy-skeleton"></div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" data-src="./Images/Projekts/Projekt_02/ThumbnailCard.png" alt="Projekt 2 - VFX Design" class="project-card-image lazy-load" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <div class="project-role" data-translate="project2Role">VFX Design</div>
+                    <div class="project-name">Projekt 2</div>
+                    <div class="project-description" data-translate="project2Description">Provisorischer Untertitel für das zweite Projekt mit kreativen Elementen.</div>
+                    <!-- NEW: Like Button and Counter -->
+                    <div class="project-like-section">
+                        <button class="like-btn" data-project-id="2">
+                            <svg class="like-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.61C2.1283 5.6417 1.5487 7.04097 1.5487 8.5C1.5487 9.95903 2.1283 11.3583 3.16 12.39L12 21.23L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39467C21.7563 5.72723 21.351 5.1208 20.84 4.61Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 with Like System -->
+            <div class="project-card" data-project-id="3">
+                <div class="project-image-container lazy-image-container">
+                    <div class="lazy-skeleton"></div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" data-src="./Images/Projekts/Projekt_03/ThumbnailCard.png" alt="Projekt 3 - Motion Graphics" class="project-card-image lazy-load" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <div class="project-role" data-translate="project3Role">Motion Graphics</div>
+                    <div class="project-name">Projekt 3</div>
+                    <div class="project-description" data-translate="project3Description">Provisorischer Untertitel für das dritte Projekt mit dynamischen Animationen.</div>
+                    <!-- NEW: Like Button and Counter -->
+                    <div class="project-like-section">
+                        <button class="like-btn" data-project-id="3">
+                            <svg class="like-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.61C2.1283 5.6417 1.5487 7.04097 1.5487 8.5C1.5487 9.95903 2.1283 11.3583 3.16 12.39L12 21.23L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39467C21.7563 5.72723 21.351 5.1208 20.84 4.61Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 with Like System -->
+            <div class="project-card" data-project-id="4">
+                <div class="project-image-container lazy-image-container">
+                    <div class="lazy-skeleton"></div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" data-src="./Images/Projekts/Projekt_04/ThumbnailCard.png" alt="Projekt 4 - 3D Rendering" class="project-card-image lazy-load" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <div class="project-role" data-translate="project4Role">3D Rendering</div>
+                    <div class="project-name">Projekt 4</div>
+                    <div class="project-description" data-translate="project4Description">Provisorischer Untertitel für das vierte Projekt mit fotorealistischen Renderings.</div>
+                    <!-- NEW: Like Button and Counter -->
+                    <div class="project-like-section">
+                        <button class="like-btn" data-project-id="4">
+                            <svg class="like-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.61C2.1283 5.6417 1.5487 7.04097 1.5487 8.5C1.5487 9.95903 2.1283 11.3583 3.16 12.39L12 21.23L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39467C21.7563 5.72723 21.351 5.1208 20.84 4.61Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 5 with Like System -->
+            <div class="project-card" data-project-id="5">
+                <div class="project-image-container lazy-image-container">
+                    <div class="lazy-skeleton"></div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" data-src="./Images/Projekts/Projekt_05/ThumbnailCard.png" alt="Projekt 5 - Character Design" class="project-card-image lazy-load" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <div class="project-role" data-translate="project5Role">Character Design</div>
+                    <div class="project-name">Projekt 5</div>
+                    <div class="project-description" data-translate="project5Description">Provisorischer Untertitel für das fünfte Projekt mit Charakterdesign.</div>
+                    <!-- NEW: Like Button and Counter -->
+                    <div class="project-like-section">
+                        <button class="like-btn" data-project-id="5">
+                            <svg class="like-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.61C2.1283 5.6417 1.5487 7.04097 1.5487 8.5C1.5487 9.95903 2.1283 11.3583 3.16 12.39L12 21.23L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39467C21.7563 5.72723 21.351 5.1208 20.84 4.61Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 6 with Like System -->
+            <div class="project-card" data-project-id="6">
+                <div class="project-image-container lazy-image-container">
+                    <div class="lazy-skeleton"></div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" data-src="./Images/Projekts/Projekt_06/ThumbnailCard.png" alt="Projekt 6 - Environment Art" class="project-card-image lazy-load" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <div class="project-role" data-translate="project6Role">Environment Art</div>
+                    <div class="project-name">Projekt 6</div>
+                    <div class="project-description" data-translate="project6Description">Provisorischer Untertitel für das sechste Projekt mit Umgebungsgestaltung.</div>
+                    <!-- NEW: Like Button and Counter -->
+                    <div class="project-like-section">
+                        <button class="like-btn" data-project-id="6">
+                            <svg class="like-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.61C2.1283 5.6417 1.5487 7.04097 1.5487 8.5C1.5487 9.95903 2.1283 11.3583 3.16 12.39L12 21.23L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39467C21.7563 5.72723 21.351 5.1208 20.84 4.61Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Popup Modal -->
+    <div id="projectModal" class="project-modal">
+        <div class="project-modal-backdrop" id="projectModalBackdrop"></div>
+        <div class="project-modal-container">
+            <div class="project-modal-header">
+                <div class="project-modal-title" data-translate="projectModalTitle" id="projectModalTitle">Project Title</div>
+                <!-- UPDATED: Red close button like video gallery -->
+                <button class="project-modal-close" id="projectModalClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="project-modal-content">
+                <div class="project-modal-main">
+                    <!-- NEUE SCROLLBARE GALERIE - ArtStation Style -->
+                    <div class="project-modal-media">
+                        <div class="project-modal-gallery" id="projectModalGallery">
+                            <!-- Beispiel-Inhalte - diese werden dynamisch gefüllt -->
+                            <div class="gallery-item">
+                                <img src="projekt1-bild1.jpg" alt="Project Image 1">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="projekt1-bild2.jpg" alt="Project Image 2">
+                            </div>
+                            <div class="gallery-item">
+                                <video poster="video-thumb.jpg">
+                                    <source src="projekt1-video.mp4" type="video/mp4">
+                                </video>
+                                <div class="gallery-item-overlay">
+                                    <div class="gallery-play-button">▶</div>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="projekt1-bild3.jpg" alt="Project Image 3">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="projekt1-bild4.jpg" alt="Project Image 4">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="projekt1-bild5.jpg" alt="Project Image 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-modal-info">
+                        <div class="project-modal-category" data-translate="projectModalCategory" id="projectModalCategory">Category</div>
+                        <div class="project-modal-description" data-translate="projectModalDescription" id="projectModalDescription">
+                            Project description goes here...
+                        </div>
+                        <div class="project-modal-details">
+                            <div class="project-detail-item">
+                                <span class="project-detail-label" data-translate="projectModalSoftwareLabel">Software Used:</span>
+                                <span class="project-detail-value" data-translate="projectModalSoftware" id="projectModalSoftware">Maya, Arnold, Nuke</span>
+                            </div>
+                            <div class="project-detail-item">
+                                <span class="project-detail-label" data-translate="projectModalDurationLabel">Duration:</span>
+                                <span class="project-detail-value" data-translate="projectModalDuration" id="projectModalDuration">2 weeks</span>
+                            </div>
+                            <div class="project-detail-item">
+                                <span class="project-detail-label" data-translate="projectModalYearLabel">Year:</span>
+                                <span class="project-detail-value" data-translate="projectModalYear" id="projectModalYear">2024</span>
+                            </div>
+                        </div>
+                        <div class="project-modal-tags" id="projectModalTags">
+                            <!-- Tags will be dynamically added here -->
+                        </div>
+                        <!-- NEW: Like Section in Modal -->
+                        <div class="project-modal-like-section">
+                            <button class="project-modal-like-btn" id="projectModalLikeBtn">
+                                <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.61C2.1283 5.6417 1.5487 7.04097 1.5487 8.5C1.5487 9.95903 2.1283 11.3583 3.16 12.39L12 21.23L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39467C21.7563 5.72723 21.351 5.1208 20.84 4.61Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="project-modal-like-text" data-translate="projectModalLikeText">Like this project</span>
+                                <span class="project-modal-like-count" id="projectModalLikeCount">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENHANCED Student Work Section -->
+    <section class="student-work" id="studentWorkSection">
+        <h2 class="student-title">Student Work</h2>
+        
+        <!-- Main Video Display -->
+        <div class="main-video-section">
+            <h3 class="video-title" id="currentVideoTitle">Production Training 500</h3>
+            <div class="video-container" id="videoContainer">
+                <!-- Video Loading Overlay -->
+                <div class="video-loading-overlay" id="videoLoadingOverlay" style="display: none;">
+                    <div class="video-spinner">
+                        <div class="spinner-ring"></div>
+                        <div class="spinner-ring"></div>
+                        <div class="spinner-ring"></div>
+                    </div>
+                    <p>Loading Video...</p>
+                </div>
+                <!-- Main video preview image -->
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" 
+                     data-src="./Images/ProductionTraining500.png" 
+                     alt="Production Training 500" 
+                     class="main-video-preview lazy-load" 
+                     id="mainVideoPreview"
+                     loading="lazy">
+                <div class="main-video-overlay"></div>
+                <button class="play-video-btn" onclick="loadVideo()" id="playVideoBtn">
+                    <span class="play-icon">▶</span>
+                    <span class="play-text">Play Video</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Enhanced Video Controls -->
+        <div class="video-controls">
+            <button class="control-btn prev-btn" onclick="navigateVideo(-1)" id="prevBtn">
+                <span class="arrow-icon">‹</span>
+                <span class="control-text" data-translate="previous">Previous</span>
+            </button>
+            
+            <div class="video-counter">
+                <span id="currentVideoIndex">1</span> / <span id="totalVideos">8</span>
+            </div>
+            
+            <button class="control-btn next-btn" onclick="navigateVideo(1)" id="nextBtn">
+                <span class="control-text" data-translate="next">Next</span>
+                <span class="arrow-icon">›</span>
+            </button>
+        </div>
+
+        <!-- Enhanced More Videos Button -->
+        <div class="more-videos-controls">
+            <button class="more-videos-btn" onclick="toggleVideoGallery()" id="moreVideosBtn">
+                <span class="gallery-icon">🎬</span>
+                <span id="moreVideosText">More Videos</span>
+                <span class="arrow" id="moreVideosArrow">▼</span>
+            </button>
+        </div>
+
+        <!-- Enhanced Video Gallery -->
+        <div class="video-gallery" id="videoGallery" style="display: none;">
+            <div class="gallery-header">
+                <h4 class="gallery-title" data-translate="videoGallery">Video Gallery</h4>
+                <button class="close-gallery-btn" onclick="toggleVideoGallery()">✕</button>
+            </div>
+            
+            <!-- Enhanced Video Grid for Mobile/Tablet -->
+            <div class="video-grid" id="videoGrid">
+                <!-- Video Thumbnails with enhanced layout -->
+                <div class="video-thumbnail active" data-video="productiontraining500" data-title="Production Training 500" data-index="0">
+                    <div class="thumbnail-wrapper">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" 
+                             data-src="./Images/ProductionTraining500.png" 
+                             alt="Production Training 500" 
+                             class="video-thumb-image lazy-load"
+                             loading="lazy">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                        <div class="video-duration">1:12</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h5 class="thumbnail-title">Production Training 500</h5>
+                        <p class="thumbnail-category">Aimation and Enviroment</p>
+                    </div>
+                </div>
+                
+                <div class="video-thumbnail" data-video="productiontraining400" data-title="Production Training 400" data-index="1">
+                    <div class="thumbnail-wrapper">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" 
+                             data-src="./Images/ProductionTraining400.png" 
+                             alt="Production Training 400" 
+                             class="video-thumb-image lazy-load"
+                             loading="lazy">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                        <div class="video-duration">0:45</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h5 class="thumbnail-title">Production Training 400</h5>
+                        <p class="thumbnail-category">Modelling and Texturing</p>
+                    </div>
+                </div>
+                
+                <div class="video-thumbnail" data-video="comp400" data-title="Comp 400" data-index="2">
+                    <div class="thumbnail-wrapper">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" 
+                             data-src="./Images/Comp400.png" 
+                             alt="Comp 400" 
+                             class="video-thumb-image lazy-load"
+                             loading="lazy">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                        <div class="video-duration">0:15</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h5 class="thumbnail-title">Comp 400</h5>
+                        <p class="thumbnail-category">CG Integration</p>
+                    </div>
+                </div>
+                
+                <div class="video-thumbnail" data-video="midterm400" data-title="Midterm 400" data-index="3">
+                    <div class="thumbnail-wrapper">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" 
+                             data-src="./Images/Midterm400.png" 
+                             alt="Midterm 400" 
+                             class="video-thumb-image lazy-load"
+                             loading="lazy">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                        <div class="video-duration">0:37</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h5 class="thumbnail-title">Midterm 400</h5>
+                        <p class="thumbnail-category">FX Simulation</p>
+                    </div>
+                </div>
+                
+                <div class="video-thumbnail" data-video="comp300" data-title="Comp 300" data-index="4">
+                    <div class="thumbnail-wrapper">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" 
+                             data-src="./Images/Comp300.png" 
+                             alt="Comp 300" 
+                             class="video-thumb-image lazy-load"
+                             loading="lazy">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                        <div class="video-duration">0:09</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h5 class="thumbnail-title">Comp 300</h5>
+                        <p class="thumbnail-category">CG Integration</p>
+                    </div>
+                </div>
+                
+                <div class="video-thumbnail" data-video="endterm300" data-title="Endterm 300" data-index="5">
+                    <div class="thumbnail-wrapper">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" 
+                             data-src="./Images/Endterm300.png" 
+                             alt="Endterm 300" 
+                             class="video-thumb-image lazy-load"
+                             loading="lazy">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                        <div class="video-duration">0:40</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h5 class="thumbnail-title">Endterm 300</h5>
+                        <p class="thumbnail-category">Modeling</p>
+                    </div>
+                </div>
+                
+                <div class="video-thumbnail" data-video="midterm300" data-title="Midterm 300" data-index="6">
+                    <div class="thumbnail-wrapper">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" 
+                             data-src="./Images/Midterm300.png" 
+                             alt="Midterm 300" 
+                             class="video-thumb-image lazy-load"
+                             loading="lazy">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                        <div class="video-duration">0:59</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h5 class="thumbnail-title">Midterm 300</h5>
+                        <p class="thumbnail-category">Aimation and Enviroment</p>
+                    </div>
+                </div>
+                
+                <div class="video-thumbnail" data-video="midterm200" data-title="Midterm 200" data-index="7">
+                    <div class="thumbnail-wrapper">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjMmMyYzJjIi8+Cjwvc3ZnPgo=" 
+                             data-src="./Images/Midterm200.png" 
+                             alt="Midterm 200" 
+                             class="video-thumb-image lazy-load"
+                             loading="lazy">
+                        <div class="video-thumb-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                        <div class="video-duration">1:13</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h5 class="thumbnail-title">Midterm 200</h5>
+                        <p class="thumbnail-category">Aimation and Enviroment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Skills Section -->
+    <section class="skills-section">
+        <h2 class="skills-title">Software Skills</h2>
+        <div class="skills-grid">
+            <a href="https://www.autodesk.com/products/maya" target="_blank" class="skill-btn">Maya</a>
+            <a href="https://www.autodesk.com/products/arnold" target="_blank" class="skill-btn">Arnold</a>
+            <a href="https://www.foundry.com/products/nuke" target="_blank" class="skill-btn">Nuke</a>
+            <a href="https://www.sidefx.com/products/houdini" target="_blank" class="skill-btn">Houdini</a>
+            <a href="https://www.unrealengine.com" target="_blank" class="skill-btn">Unreal</a>
+            <a href="https://www.maxon.net/zbrush" target="_blank" class="skill-btn">ZBrush</a>
+            <a href="https://www.blender.org" target="_blank" class="skill-btn">Blender</a>
+            <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" class="skill-btn">DaVinci Resolve</a>
+            <a href="https://www.marvelousdesigner.com" target="_blank" class="skill-btn">Marvelous Designer</a>
+            <a href="https://affinity.serif.com/designer" target="_blank" class="skill-btn">Affinity Designer</a>
+            <a href="https://www.foundry.com/products/mari" target="_blank" class="skill-btn">Mari</a>
+            <a href="https://www.adobe.com/products/substance3d-painter.html" target="_blank" class="skill-btn">Substance Painter</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2035 Moritz Pahrmann VFX</p>
+        <div class="footer-links">
+            <a href="data-protection.html">Datenschutz</a>
+            <a href="legal-info.html">Legal Info</a>
+        </div>
+    </footer>
+
+    <!-- Language Toggle Button -->
+    <div class="language-toggle" id="languageToggle">
+        <button class="lang-btn" onclick="toggleLanguage()">
+            <span id="langText">EN</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="construction-overlay.js"></script>
+</body>
+</html>
